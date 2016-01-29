@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black">
+
+    <ImageView
+        android:id="@+id/info_bg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="centerCrop"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="bottom"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true"
+        android:paddingLeft="4dip"
+        android:paddingBottom="6dip"
+        >
+        <TextView
+            android:id="@+id/catid_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="2dip"
+            android:paddingRight="2dip"
+            android:textSize="10sp"
+            android:layout_marginBottom="2dip"
+            android:textColor="@color/white"/>
+
+        <TextView
+            android:id="@+id/subtitle1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="2dip"
+            android:paddingLeft="2dip"
+            android:paddingRight="2dip"
+            android:textSize="14sp"
+            android:textColor="@color/white"/>
+
+        <TextView
+            android:id="@+id/subtitle2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="2dip"
+            android:paddingLeft="2dip"
+            android:paddingRight="2dip"
+            android:textSize="14sp"
+            android:textColor="@color/white"/>
+
+        <TextView
+            android:id="@+id/subtitle3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="2dip"
+            android:paddingRight="2dip"
+            android:textSize="14sp"
+            android:textColor="@color/white"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@color/black"
+    android:layout_height="match_parent"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="14dip">
+
+        <ImageView
+            android:id="@+id/s1"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/weixin_timeline"
+            android:layout_marginRight="10dip"
+            android:scaleType="fitCenter"/>
+        <ImageView
+            android:id="@+id/s2"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginRight="10dip"
+
+            android:src="@drawable/weixin"
+            android:scaleType="fitCenter"/>
+        <ImageView
+            android:id="@+id/s3"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginRight="10dip"
+
+            android:src="@drawable/sina_logo"
+            android:scaleType="fitCenter"/>
+        <ImageView
+            android:id="@+id/s4"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/qq"
+            android:layout_marginRight="10dip"
+
+            android:scaleType="fitCenter"/>
+        <ImageView
+            android:id="@+id/s5"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/qzone"
+            android:scaleType="fitCenter"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/sharemore"
+        android:layout_width="match_parent"
+        android:layout_height="42dip"
+        android:layout_marginLeft="14dip"
+        android:layout_marginRight="14dip"
+        android:background="@color/blue_divide"
+        android:gravity="center"
+        android:text="更多"
+        android:textColor="@color/white"
+        android:textSize="16sp"/>
+
+</LinearLayout>

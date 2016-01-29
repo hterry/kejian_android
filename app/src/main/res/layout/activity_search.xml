@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:id="@+id/search_bg"
+    android:background="@color/bggray"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="38dip"
+        android:paddingBottom="8dip"
+        android:paddingLeft="8dip"
+        android:paddingRight="8dip"
+        android:background="@color/black"
+        >
+
+        <Button
+            android:id="@+id/startsearch"
+            android:layout_width="84dip"
+            android:layout_height="30dip"
+            android:gravity="center"
+            android:text="搜索"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            android:background="@color/green"
+            android:layout_alignParentRight="true"/>
+
+        <EditText
+            android:id="@+id/keyword"
+            android:layout_width="match_parent"
+            android:layout_height="30dip"
+            android:layout_marginRight="8dip"
+            android:paddingLeft="6dip"
+            android:background="@color/white"
+            android:layout_toLeftOf="@id/startsearch"/>
+    </RelativeLayout>
+
+    <com.example.luo.view.view.XListView
+        android:id="@+id/result_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@color/bggray"
+        android:dividerHeight="2dip"
+        ></com.example.luo.view.view.XListView>
+</LinearLayout>

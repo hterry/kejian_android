@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="26dip"
+    android:gravity="center_vertical"
+    android:paddingBottom="14dip"
+    >
+
+    <ImageView
+        android:id="@+id/left_logo"
+        android:layout_width="26dip"
+        android:layout_height="26dip"
+        android:layout_marginRight="12dip"/>
+
+    <TextView
+        android:id="@+id/left_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:textColor="@color/gray"
+        android:text="课间首页"/>
+
+</LinearLayout>
