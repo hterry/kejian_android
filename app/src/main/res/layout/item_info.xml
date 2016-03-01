@@ -7,7 +7,14 @@
     <ImageView
         android:id="@+id/info_bg"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="260dip"
+        android:scaleType="centerCrop"/>
+
+    <com.felipecsl.gifimageview.library.GifImageView
+        android:id="@+id/gifbg"
+        android:layout_width="match_parent"
+        android:layout_height="260dip"
+        android:visibility="gone"
         android:scaleType="centerCrop"/>
 
     <LinearLayout

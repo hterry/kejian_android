@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    android:versionCode="10"
-    android:versionName="1.0"
+    android:versionCode="20"
+    android:versionName="2.0"
     package="com.weiguan.kejian" >
 
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
@@ -47,14 +47,15 @@
     <uses-permission android:name="android.permission.BLUETOOTH" />
     <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
     <application
-        android:name="com.example.luo.MyApplication"
+        android:name=".MyApplication"
         android:allowBackup="true"
+        android:largeHeap="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme" >
         <activity
-            android:name="com.example.luo.WelcomeActivity"
+            android:name=".WelcomeActivity"
             android:label="@string/app_name"
             android:screenOrientation="portrait" >
             <intent-filter>
@@ -64,21 +65,66 @@
             </intent-filter>
         </activity>
 
-        <activity android:name="com.example.luo.MainActivity"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
-        <activity android:name="com.example.luo.WebActivity"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
-        <!-- ###################注册SDK使用的Activity###################### -->
-        <activity android:name="com.example.luo.SettingActivity"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
-        <activity android:name="com.example.luo.AboutActivity"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
-        <activity android:name="com.example.luo.SearchActivity"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
-        <activity android:name="com.example.luo.TestActivity"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
-        <activity android:name="com.example.luo.AdviceActivity"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity android:name=".MainActivity"
+            android:windowSoftInputMode="adjustResize|stateHidden"
+            android:theme="@style/MyTheme"></activity>
+        <activity android:name=".WebActivity"
+            android:theme="@style/MyTheme"></activity>
+        <activity android:name=".SettingActivity"
+            android:windowSoftInputMode="adjustResize|stateHidden"
+            android:theme="@style/MyTheme"></activity>
+        <activity android:name=".AboutActivity"
+            android:windowSoftInputMode="adjustResize|stateHidden"
+            android:theme="@style/MyTheme"></activity>
+        <activity android:name=".SearchActivity"
+            android:windowSoftInputMode="adjustResize|stateHidden"
+            android:theme="@style/MyTheme"></activity>
+        <activity android:name=".TestActivity"
+            android:windowSoftInputMode="adjustResize|stateHidden"
+            android:theme="@style/MyTheme"></activity>
+        <activity android:name=".AdviceActivity"
+            android:windowSoftInputMode="adjustResize|stateHidden"
+            android:theme="@style/MyTheme"></activity>
+        <activity android:name=".LoginActivity"
+            android:windowSoftInputMode="adjustResize|stateHidden"
+            android:theme="@style/MyTheme"></activity>
+        <activity android:name=".RegistActivity"
+            android:windowSoftInputMode="adjustResize|stateHidden"
+            android:theme="@style/MyTheme"></activity>
+        <activity android:name=".SetUserPicActivity"
+            android:windowSoftInputMode="adjustResize|stateHidden"
+            android:theme="@style/MyTheme"></activity>
+        <activity android:name=".ForgetPWActivity"
+            android:windowSoftInputMode="adjustResize|stateHidden"
+            android:theme="@style/MyTheme"></activity>
+        <activity android:name=".ResetPWActivity"
+            android:windowSoftInputMode="adjustResize|stateHidden"
+            android:theme="@style/MyTheme"></activity>
+        <activity android:name=".UserCenterActivity"
+            android:windowSoftInputMode="adjustResize|stateHidden"
+            android:theme="@style/MyTheme"></activity>
+        <activity android:name=".ModifyInfoActivity"
+            android:windowSoftInputMode="adjustResize|stateHidden"
+            android:theme="@style/MyTheme"></activity>
+        <activity android:name=".SaftySettingActivity"
+            android:windowSoftInputMode="adjustResize|stateHidden"
+            android:theme="@style/MyTheme"></activity>
+        <activity android:name=".VerifyOldTelActivity"
+            android:windowSoftInputMode="adjustResize|stateHidden"
+            android:theme="@style/MyTheme"></activity>
+        <activity android:name=".SetNewTelActivity"
+            android:windowSoftInputMode="adjustResize|stateHidden"
+            android:theme="@style/MyTheme"></activity>
+        <activity android:name=".ModifyPasswordActivity"
+            android:windowSoftInputMode="adjustResize|stateHidden"
+            android:theme="@style/MyTheme"></activity>
+        <activity android:name=".CommentListActivity"
+            android:windowSoftInputMode="stateHidden|adjustResize"
+            android:theme="@style/MyTheme"></activity>
+        <activity android:name=".UserCommentActivity"
+            android:theme="@style/MyTheme"></activity>
+        <activity android:name=".MyFavouriteActivity"
+            android:theme="@style/MyTheme"></activity>
         <!-- ###################注册SDK使用的Activity###################### -->
         <!--分享编辑页-->
         <service
@@ -91,14 +137,14 @@
             android:excludeFromRecents="true"/>
         <!-- ############ QQ空间和QQ SSO授权的Activity注册 ############ -->
         <activity
-            android:name="com.example.luo.wxapi.WXEntryActivity"
+            android:name=".wxapi.WXEntryActivity"
             android:configChanges="keyboardHidden|orientation|screenSize"
             android:exported="true"
             android:screenOrientation="portrait"
             android:theme="@android:style/Theme.Translucent.NoTitleBar" />
 
         <activity
-            android:name="com.example.luo.WBShareActivity"
+            android:name=".WBShareActivity"
             android:configChanges="keyboardHidden|orientation"
             android:screenOrientation="portrait" >
             <intent-filter>
@@ -262,7 +308,7 @@
         <!-- 您从百度网站获取的APP KEY -->
         <meta-data android:name="BaiduMobAd_STAT_ID" android:value="566c73cd2e" /> <!-- abcd1234 -->
         <!-- 渠道商编号 -->
-        <meta-data android:name="BaiduMobAd_CHANNEL" android:value="应用宝" />
+        <meta-data android:name="BaiduMobAd_CHANNEL" android:value="91" />
 
         <!-- 是否开启错误日志统计，默认为false -->
         <meta-data android:name="BaiduMobAd_EXCEPTION_LOG" android:value="true" />
@@ -271,7 +317,7 @@
         <!-- 日志发送策略 为SET_TIME_INTERVAL时，需设定时间间隔(取消下行注释)。取值为1-24的整数，默认为1 -->
          <meta-data android:name="BaiduMobAd_TIME_INTERVAL" android:value="24" />
         <!-- 日志仅在wifi网络下发送，默认为false -->
-        <meta-data android:name="BaiduMobAd_ONLY_WIFI" android:value="false" />
+        <meta-data android:name="BaiduMobAd_ONLY_WIFI" android:value="true" />
         <!-- 是否获取基站位置信息 ,默认为true-->
         <meta-data android:name="BaiduMobAd_CELL_LOCATION" android:value="true" />
         <!-- 是否获取GPS位置信息，默认为true -->

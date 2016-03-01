@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scview"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical" android:layout_width="match_parent"
+        android:background="@color/white"
+        android:layout_height="match_parent">
+
+        <include layout="@layout/title_user"></include>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="46dip"
+            android:layout_marginRight="46dip"
+            android:layout_marginTop="32dip"
+            >
+
+            <TextView
+                android:id="@+id/findpw"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="8dip"
+                android:layout_marginRight="8dip"
+                android:text="找回密码"
+                android:textColor="@color/gray"
+                android:textSize="14sp"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dip"
+                android:background="@color/gray"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@id/findpw"
+                ></LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dip"
+                android:layout_centerVertical="true"
+                android:background="@color/gray"
+                android:layout_toRightOf="@id/findpw"
+                ></LinearLayout>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <EditText
+                android:id="@+id/findtel"
+                android:layout_width="match_parent"
+                android:layout_height="32dip"
+                android:layout_marginLeft="46dip"
+                android:layout_marginRight="46dip"
+                android:layout_marginTop="18dip"
+                android:background="@drawable/gray_rec"
+                android:paddingLeft="10dip"
+                android:maxLength="11"
+                android:textSize="14sp"
+                android:textColor="@color/black"
+                android:cursorVisible="true"
+                android:inputType="number"
+                android:hint="注册所用的手机号码"
+                />
+
+            <Button
+                android:id="@+id/requestverify"
+                android:layout_width="match_parent"
+                android:layout_height="32dip"
+                android:layout_marginRight="46dip"
+                android:layout_marginLeft="46dip"
+                android:layout_marginTop="8dip"
+                android:background="@color/pink_divide"
+                android:text="发 送 验 证 码"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                />
+
+            <EditText
+                android:id="@+id/etverifycode"
+                android:layout_width="match_parent"
+                android:layout_height="32dip"
+                android:maxLength="6"
+                android:inputType="number"
+                android:layout_marginLeft="46dip"
+                android:layout_marginRight="46dip"
+                android:layout_marginTop="8dip"
+                android:background="@drawable/gray_rec"
+                android:paddingLeft="10dip"
+                android:textSize="14sp"
+                android:cursorVisible="true"
+                android:textColor="@color/black"
+                android:hint="输入验证码"/>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/verifystatus"
+                android:layout_width="38dip"
+                android:layout_height="38dip"
+                android:layout_marginTop="36dip"
+                android:layout_marginBottom="28dip"
+                android:layout_centerHorizontal="true"
+                android:visibility="gone"
+                android:src="@drawable/correct_tips"/>
+
+            <Button
+                android:id="@+id/nextfindstep"
+                android:layout_width="match_parent"
+                android:layout_height="32dip"
+                android:layout_marginRight="46dip"
+                android:layout_below="@id/verifystatus"
+                android:layout_marginLeft="46dip"
+                android:layout_marginTop="8dip"
+                android:background="@color/pink_divide"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                android:text="下一步"
+                android:layout_marginBottom="40dip"
+                />
+        </RelativeLayout>
+
+
+    </LinearLayout>
+</ScrollView>

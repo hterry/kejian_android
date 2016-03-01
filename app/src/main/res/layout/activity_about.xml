@@ -19,7 +19,7 @@
         android:background="@color/white"
         android:visibility="gone">
 
-        <com.example.luo.view.GifView
+        <com.weiguan.kejian.view.GifView
             android:id="@+id/gifcontent"
             android:layout_width="90dip"
             android:layout_height="72dip"

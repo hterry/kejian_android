@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scview"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="vertical" android:layout_width="match_parent"
+        android:background="@color/white"
+        android:layout_height="match_parent">
+
+        <include layout="@layout/title_user"></include>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dip"
+            android:paddingLeft="46dip"
+            android:paddingRight="46dip"
+            >
+
+            <TextView
+                android:id="@+id/setting_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="8dip"
+                android:layout_marginRight="8dip"
+                android:text="修改手机号"
+                android:textSize="14sp"
+                android:textColor="@color/gray"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dip"
+                android:background="@color/gray"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@id/setting_tv"
+                ></LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dip"
+                android:layout_centerVertical="true"
+                android:background="@color/gray"
+                android:layout_toRightOf="@id/setting_tv"
+                ></LinearLayout>
+
+        </RelativeLayout>
+
+        <EditText
+            android:id="@+id/et_newtel"
+            android:layout_width="match_parent"
+            android:layout_height="32dip"
+            android:layout_marginLeft="52dip"
+            android:layout_marginRight="52dip"
+            android:layout_marginTop="32dip"
+            android:inputType="number"
+            android:maxLength="11"
+            android:background="@drawable/gray_rec"
+            android:paddingLeft="10dip"
+            android:cursorVisible="true"
+            android:textSize="14sp"
+            android:textColor="@color/black"
+            android:hint="输入新手机号"/>
+
+
+        <Button
+            android:id="@+id/sendsms"
+            android:layout_width="match_parent"
+            android:layout_height="32dip"
+            android:background="@color/pink_divide"
+            android:layout_marginTop="18dip"
+            android:layout_marginLeft="52dip"
+            android:layout_marginRight="52dip"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            android:text="发送验证码"/>
+
+        <EditText
+            android:id="@+id/inputverify"
+            android:layout_width="match_parent"
+            android:layout_height="32dip"
+            android:layout_marginLeft="52dip"
+            android:layout_marginRight="52dip"
+            android:layout_marginTop="18dip"
+            android:inputType="number"
+            android:maxLength="6"
+            android:background="@drawable/gray_rec"
+            android:cursorVisible="true"
+            android:paddingLeft="10dip"
+            android:textSize="14sp"
+            android:textColor="@color/black"
+            android:hint="输入验证码"/>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dip"
+            >
+
+            <ImageView
+                android:id="@+id/verifystatus"
+                android:layout_width="38dip"
+                android:layout_height="38dip"
+                android:layout_marginTop="36dip"
+                android:layout_marginBottom="28dip"
+                android:layout_centerHorizontal="true"
+                android:visibility="gone"
+                android:src="@drawable/correct_tips"/>
+
+            <Button
+                android:id="@+id/setcomplete"
+                android:layout_width="match_parent"
+                android:layout_height="32dip"
+                android:layout_marginLeft="52dip"
+                android:layout_marginRight="52dip"
+                android:layout_marginBottom="40dip"
+                android:layout_below="@id/verifystatus"
+                android:layout_marginTop="8dip"
+                android:background="@drawable/pink_rec"
+                android:textColor="@color/grey"
+                android:textSize="14sp"
+                android:text="完成"
+                />
+        </RelativeLayout>
+
+    </LinearLayout>
+</ScrollView>

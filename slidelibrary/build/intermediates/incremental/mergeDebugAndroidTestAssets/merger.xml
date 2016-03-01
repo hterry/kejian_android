@@ -1,2 +1,2 @@
 <?xml version="1.0" encoding="utf-8"?>
-<merger version="3"><dataSet config="debug"><source path="D:\code_space\MyFW\slidelibrary\build\intermediates\bundles\debug\assets"/></dataSet><dataSet config="main"><source path="D:\code_space\MyFW\slidelibrary\src\androidTest\assets"/></dataSet></merger>
+<merger version="3"><dataSet config="debug"><source path="D:\kejian\kejian_android\slidelibrary\build\intermediates\bundles\debug\assets"/></dataSet><dataSet config="main"><source path="D:\kejian\kejian_android\slidelibrary\src\androidTest\assets"/></dataSet></merger>

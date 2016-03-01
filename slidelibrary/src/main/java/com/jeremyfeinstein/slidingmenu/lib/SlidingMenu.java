@@ -91,28 +91,28 @@ public class SlidingMenu extends RelativeLayout {
 	 * 滑动菜单打开时的监听事件
 	 */
 	public interface OnOpenListener {	
-		void onOpen();
+		public void onOpen();
 	}
 
 	/**
 	 * 监测滑动菜单是否已经打开的监听事件
 	 */
 	public interface OnOpenedListener {
-		void onOpened();
+		public void onOpened();
 	}
 
 	/**
 	 * 滑动菜单关闭时的监听事件
 	 */
 	public interface OnCloseListener {
-		void onClose();
+		public void onClose();
 	}
 
 	/**
 	 * 监测滑动菜单是否已经关闭的监听事件
 	 */
 	public interface OnClosedListener {
-		void onClosed();
+		public void onClosed();
 	}
 
 	/**
@@ -126,7 +126,7 @@ public class SlidingMenu extends RelativeLayout {
 		 * @param canvas the canvas
 		 * @param percentOpen the percent open
 		 */
-		void transformCanvas(Canvas canvas, float percentOpen);
+		public void transformCanvas(Canvas canvas, float percentOpen);
 	}
 
 	/**

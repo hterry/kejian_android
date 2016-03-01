@@ -81,5 +81,9 @@
         <attr name="ptrDrawableTop" format="reference" />
         <attr name="ptrDrawableBottom" format="reference" />
     </declare-styleable>
-
+    <string-array name="sorttype">
+        <item>按留言数量排列</item>
+        <item>按喜爱数量排列</item>
+        <item>按发布时间排列</item>
+    </string-array>
 </resources>

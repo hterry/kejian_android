@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scview"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical" android:layout_width="match_parent"
+        android:background="@color/white"
+        android:gravity="center_horizontal"
+        android:layout_height="match_parent">
+
+        <include layout="@layout/title_user"></include>
+
+        <com.weiguan.kejian.view.CircleImageView
+            android:id="@+id/modify_logo"
+            android:layout_width="114dip"
+            android:layout_height="114dip"
+            android:layout_marginTop="56dip"
+            android:src="@drawable/edit_headpic"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="28dip"
+            >
+
+            <EditText
+                android:id="@+id/et_nickname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="10dip"
+                android:paddingLeft="48dip"
+                android:layout_marginLeft="12dip"
+                android:background="@drawable/gray_base_line"
+                android:hint="怎么称呼你"
+                android:cursorVisible="true"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="昵称"
+                android:textSize="16sp"
+                android:layout_marginLeft="18dip"
+                android:textColor="@color/pink_divide"
+                />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="28dip"
+            >
+
+            <EditText
+                android:id="@+id/et_intro"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="10dip"
+                android:paddingLeft="48dip"
+                android:layout_marginLeft="12dip"
+                android:background="@drawable/gray_base_line"
+                android:hint="介绍一下你自己吧"
+                android:cursorVisible="true"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="介绍"
+                android:layout_marginLeft="18dip"
+                android:textSize="16sp"
+                android:textColor="@color/pink_divide"
+                />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginTop="70dip"
+            android:paddingBottom="58dip"
+            android:gravity="bottom"
+            >
+            <Button
+                android:id="@+id/modify_compete"
+                android:layout_width="match_parent"
+                android:layout_height="32dip"
+                android:background="@color/pink_divide"
+                android:layout_marginLeft="52dip"
+                android:layout_marginRight="52dip"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                android:text="完成"/>
+            <Button
+                android:id="@+id/safty_set"
+                android:layout_width="match_parent"
+                android:layout_height="32dip"
+                android:layout_marginLeft="52dip"
+                android:layout_marginRight="52dip"
+                android:layout_marginTop="18dip"
+                android:background="@drawable/pink_rec"
+                android:textColor="@color/grey"
+                android:textSize="14sp"
+                android:text="安全设置"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

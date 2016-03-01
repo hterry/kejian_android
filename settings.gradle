@@ -1,1 +1,1 @@
-include ':app', ':slidelibrary', ':library'
+include ':app', ':slidelibrary', ':library', ':galleryfinal', ':giflib'

@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="false"
+    android:focusableInTouchMode="false"
+    >
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#E6E6E6"
+        >
+        <include layout="@layout/titlebar2"></include>
+
+        <RelativeLayout
+            android:id="@+id/mycmly"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="12dip"
+            android:paddingRight="12dip"
+            android:paddingTop="14dip"
+            android:paddingBottom="14dip"
+            android:background="@color/white">
+            <ImageView
+                android:id="@+id/cc"
+                android:layout_width="20dip"
+                android:layout_height="20dip"
+                android:src="@drawable/comment"
+                android:layout_marginLeft="6dp"
+                android:layout_centerVertical="true" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="我发出的评论"
+                android:textColor="@color/grey"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/cc"
+                android:layout_toEndOf="@+id/cc"
+                android:layout_marginLeft="18dp" />
+            <ImageView
+                android:layout_width="10dip"
+                android:layout_height="14dip"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="6dip"
+                android:src="@drawable/grey_row"
+                />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dip"
+            android:background="#898989"
+            android:layout_marginBottom="1dip"></LinearLayout>
+
+        <com.weiguan.kejian.view.view.XListView
+            android:id="@+id/commentlist"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+        </com.weiguan.kejian.view.view.XListView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/commently"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:visibility="gone"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="90dip"
+                android:layout_height="28dip"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_margin="8dip"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:background="@drawable/conment_bg">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="10dip"
+                    android:layout_marginRight="4dip"
+                    android:textColor="#B1B8C1"
+                    android:text="匿名发布"
+                    android:textSize="13sp"
+                    />
+
+                <CheckBox
+                    android:id="@+id/btn_isnoname"
+                    android:layout_width="14dip"
+                    android:layout_height="14dip"
+                    android:layout_marginTop="8dip"
+                    android:layout_marginBottom="8dip"
+                    android:layout_marginRight="8dip"
+                    android:checked="false"
+                    android:textColor="#B1B8C1"
+                    android:paddingRight="14dip"
+                    android:button="@null"
+                    android:background="@drawable/isnoname"
+                    />
+            </LinearLayout>
+
+
+
+        </RelativeLayout>
+
+        <EditText
+            android:id="@+id/et_comment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2dip"
+            android:layout_marginRight="2dip"
+            android:paddingLeft="4dip"
+            android:layout_marginBottom="4dip"
+            android:singleLine="true"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:cursorVisible="true"
+            android:inputType="text"
+            android:imeOptions="actionSend"
+            android:minHeight="40dip"
+            android:background="@drawable/gray_rec2"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

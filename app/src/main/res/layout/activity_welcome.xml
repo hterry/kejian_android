@@ -4,7 +4,7 @@
     android:layout_height="match_parent"
     android:background="@color/white">
 
-    <com.example.luo.view.GifView
+    <com.weiguan.kejian.view.GifView
         android:id="@+id/welcome_anim"
         android:layout_width="200dip"
         android:layout_height="110dip"

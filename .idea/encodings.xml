@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="Encoding">
-    <file url="file://$PROJECT_DIR$/app/src/main/java/com/example/luo/WebActivity.java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/app/src/main/java/com/example/luo/view/ldrawer" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/weiguan/kejian/view/ldrawer" charset="GBK" />
     <file url="file://$PROJECT_DIR$/app/src/main/res/anim/fade_in.xml" charset="GBK" />
     <file url="file://$PROJECT_DIR$/app/src/main/res/anim/fade_out.xml" charset="GBK" />
     <file url="file://$PROJECT_DIR$/app/src/main/res/drawable/ic_drawer.png" charset="GBK" />

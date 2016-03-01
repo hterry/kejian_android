@@ -31,8 +31,14 @@
             android:layout_height="wrap_content"
             android:paddingLeft="2dip"
             android:paddingRight="2dip"
+            android:visibility="gone"
             android:textSize="16sp"
             android:textColor="@color/white"/>
+
+        <com.weiguan.kejian.view.CFTextView
+            android:id="@+id/test"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
     </LinearLayout>
 
 </RelativeLayout>

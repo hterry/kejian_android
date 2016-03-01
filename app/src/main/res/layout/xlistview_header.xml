@@ -52,7 +52,8 @@
             android:layout_alignLeft="@id/xlistview_header_text"
             android:layout_centerVertical="true"
             android:layout_marginLeft="-35dp"
-            android:src="@drawable/xlistview_arrow" />
+            android:src="@drawable/xlistview_arrow"
+            android:visibility="gone"/>
 
         <ProgressBar
             android:id="@+id/xlistview_header_progressbar"
@@ -64,7 +65,7 @@
             android:visibility="invisible" />
     </RelativeLayout>
 
-    <com.example.luo.view.GifView
+    <com.weiguan.kejian.view.GifView
         android:id="@+id/loadingcontent"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

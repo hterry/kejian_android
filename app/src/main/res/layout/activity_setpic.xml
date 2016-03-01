@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scview"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical" android:layout_width="match_parent"
+        android:background="@color/white"
+        android:gravity="center_horizontal"
+        android:layout_height="match_parent">
+
+        <include layout="@layout/title_user"></include>
+
+        <com.weiguan.kejian.view.CircleImageView
+            android:id="@+id/select_pic"
+            android:layout_width="110dip"
+            android:layout_height="114dip"
+            android:layout_marginTop="4dip"
+            android:src="@drawable/edit_headpic"
+            />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dip"
+            android:paddingLeft="46dip"
+            android:paddingRight="46dip"
+            >
+
+            <TextView
+                android:id="@+id/social_regist"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dip"
+                android:layout_marginRight="8dip"
+                android:layout_centerInParent="true"
+                android:text="选取头像"
+                android:textColor="@color/gray"
+                android:textSize="14sp"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dip"
+                android:background="@color/gray"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@id/social_regist"
+                ></LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dip"
+                android:layout_centerVertical="true"
+                android:background="@color/gray"
+                android:layout_toRightOf="@id/social_regist"
+                ></LinearLayout>
+
+        </RelativeLayout>
+
+        <EditText
+            android:id="@+id/nickname"
+            android:layout_width="match_parent"
+            android:layout_height="32dip"
+            android:layout_marginTop="14dip"
+            android:layout_marginLeft="46dip"
+            android:layout_marginRight="46dip"
+            android:background="@drawable/gray_rec"
+            android:paddingLeft="6dip"
+            android:textSize="14sp"
+            android:textColor="@color/black"
+            android:cursorVisible="true"
+            android:hint="我的昵称"
+            />
+
+        <EditText
+            android:id="@+id/intro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dip"
+            android:layout_marginLeft="46dip"
+            android:layout_marginRight="46dip"
+            android:background="@drawable/gray_rec"
+            android:gravity="start"
+            android:minHeight="70dip"
+            android:paddingTop="6dip"
+            android:paddingLeft="4dip"
+            android:textSize="14sp"
+            android:textColor="@color/black"
+            android:cursorVisible="true"
+            android:hint="一句话介绍自己"
+            />
+
+        <Button
+            android:id="@+id/complete"
+            android:layout_width="match_parent"
+            android:layout_height="32dip"
+            android:layout_marginTop="20dip"
+            android:layout_marginLeft="46dip"
+            android:layout_marginRight="46dip"
+            android:background="@color/pink_divide"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            android:layout_marginBottom="40dip"
+            android:text="完成"
+            />
+    </LinearLayout>
+</ScrollView>

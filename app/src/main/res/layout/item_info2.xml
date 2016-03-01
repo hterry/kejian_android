@@ -16,6 +16,13 @@
             android:layout_height="wrap_content"
             android:scaleType="centerCrop"/>
 
+        <com.felipecsl.gifimageview.library.GifImageView
+            android:id="@+id/gifbg1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:scaleType="centerCrop"/>
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -59,6 +66,13 @@
             android:id="@+id/info2_bg2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:scaleType="centerCrop"/>
+
+        <com.felipecsl.gifimageview.library.GifImageView
+            android:id="@+id/gifbg2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
             android:scaleType="centerCrop"/>
 
         <LinearLayout

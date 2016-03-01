@@ -10,11 +10,18 @@
     <EditText
         android:id="@+id/advice"
         android:layout_width="match_parent"
-        android:layout_height="400dip"
+        android:layout_height="wrap_content"
+        android:paddingLeft="6dip"
+        android:paddingRight="6dip"
+        android:minHeight="400dip"
         android:background="@null"
         android:layout_below="@id/title"
         android:gravity="start"
         android:layout_above="@+id/advice_submit"
+        android:textSize="16sp"
+        android:textColor="@color/black"
+        android:cursorVisible="true"
+        android:textCursorDrawable="@color/black"
         android:hint="把你的建议写下来吧"/>
 
     <Button

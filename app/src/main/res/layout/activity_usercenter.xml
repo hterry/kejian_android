@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/title_user"></include>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="17dip"
+        android:layout_marginBottom="18dip"
+        >
+
+        <com.weiguan.kejian.view.CircleImageView
+            android:id="@+id/user_logo"
+            android:layout_width="114dip"
+            android:layout_height="114dip"
+            android:layout_centerInParent="true"
+            android:src="@drawable/default_user_pic"
+            />
+        <com.weiguan.kejian.view.CircleImageView
+            android:layout_width="20dip"
+            android:layout_height="20dip"
+            android:src="@drawable/pen"
+            android:layout_alignParentTop="true"
+            android:layout_alignRight="@+id/user_logo"
+            android:layout_alignEnd="@+id/user_logo"
+            android:layout_marginTop="16dp" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/user_nickname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="用户名"
+        android:textSize="14sp"
+        android:textColor="@color/black"
+        />
+    <TextView
+        android:id="@+id/user_intro"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dip"
+        android:singleLine="true"
+        android:gravity="center"
+        android:text="111111111111111111111111111"
+        android:textSize="14sp"
+        android:textColor="@color/grey"
+        />
+    <TextView
+        android:id="@+id/user_lv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dip"
+        android:layout_marginBottom="16dip"
+        android:gravity="center"
+        android:text="等级：一年级"
+        android:textSize="16sp"
+        android:textColor="#1E1E1E"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="4dip"
+        android:background="@color/gray2"
+        android:visibility="gone"
+        ></LinearLayout>
+
+    <TextView
+        android:id="@+id/user_ex"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="13dip"
+        android:paddingBottom="14dip"
+        android:gravity="center"
+        android:textSize="12sp"
+        android:text="还要 2800 分升级"
+        android:textColor="@color/pink_divide"
+        android:visibility="gone"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dip"
+        android:background="#C7C7C7"
+        android:visibility="gone"
+        ></LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="3dip"
+        android:background="#E6E6E6"
+        android:visibility="gone"
+        ></LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dip"
+        android:background="#C7C7C7"
+        android:visibility="gone"
+        ></LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="28dip"
+            android:gravity="center"
+            android:text="绑定社交账号"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="46dip"
+            android:orientation="horizontal"
+            android:paddingLeft="50dip"
+            android:paddingRight="50dip"
+            android:layout_marginTop="20dip"
+            android:layout_marginBottom="26dip"
+            >
+
+            <ImageView
+                android:id="@+id/sina"
+                android:layout_weight="1"
+                android:layout_width="0dip"
+                android:clickable="true"
+                android:src="@drawable/login_sina"
+                android:layout_height="wrap_content" />
+            <ImageView
+                android:id="@+id/weixin"
+                android:clickable="true"
+                android:layout_weight="1"
+                android:layout_width="0dip"
+                android:src="@drawable/login_weixin"
+                android:layout_height="wrap_content" />
+            <ImageView
+                android:id="@+id/qq"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:layout_width="0dip"
+                android:src="@drawable/login_qq"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="20dip"
+        android:background="#E6E6E6"
+        android:visibility="gone"
+        ></LinearLayout>
+
+    <TextView
+        android:id="@+id/logout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="50dip"
+        android:textColor="@color/pink_divide"
+        android:textSize="16sp"
+        android:text="退 出 账 号"
+        />
+</LinearLayout>

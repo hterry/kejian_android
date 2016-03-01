@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scview"
+    android:focusable="false"
+    android:focusableInTouchMode="false"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="vertical" android:layout_width="match_parent"
+        android:gravity="center_horizontal"
+        android:background="@color/white"
+        android:layout_height="match_parent">
+
+        <include layout="@layout/title_user"></include>
+
+        <ImageView
+            android:layout_width="110dip"
+            android:layout_height="114dip"
+            android:layout_marginTop="4dip"
+            android:src="@drawable/login_logo"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dip"
+            android:paddingLeft="46dip"
+            android:paddingRight="46dip"
+            >
+
+            <TextView
+                android:id="@+id/social_regist"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="8dip"
+                android:layout_marginRight="8dip"
+                android:textColor="@color/gray"
+                android:text="注册"
+                android:textSize="14sp"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dip"
+                android:background="@color/gray"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@id/social_regist"
+                ></LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dip"
+                android:layout_centerVertical="true"
+                android:background="@color/gray"
+                android:layout_toRightOf="@id/social_regist"
+                ></LinearLayout>
+
+        </RelativeLayout>
+
+        <EditText
+            android:id="@+id/telnumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="6dip"
+            android:paddingBottom="6dip"
+            android:layout_marginLeft="46dip"
+            android:layout_marginRight="46dip"
+            android:layout_marginTop="18dip"
+            android:inputType="number"
+            android:maxLength="11"
+            android:background="@drawable/gray_rec"
+            android:paddingLeft="10dip"
+            android:cursorVisible="true"
+            android:textSize="14sp"
+            android:textColor="@color/black"
+            android:hint="手机号码"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="46dip"
+            android:layout_marginRight="46dip"
+            android:layout_marginTop="12dip"
+            >
+            <EditText
+                android:id="@+id/pw"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="6dip"
+                android:paddingBottom="6dip"
+                android:layout_centerVertical="true"
+                android:background="@drawable/gray_rec"
+                android:inputType="textPassword"
+                android:paddingLeft="10dip"
+                android:cursorVisible="true"
+                android:textSize="14sp"
+                android:textColor="@color/black"
+                android:hint="密码"/>
+
+            <ImageView
+                android:id="@+id/login_eye"
+                android:layout_width="22dip"
+                android:layout_height="16dip"
+                android:layout_marginRight="10dip"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/eye"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dip"
+            android:layout_marginTop="6dip"
+            android:layout_marginBottom="28dip"
+            >
+
+            <CheckBox
+                android:id="@+id/isreadprotocol"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="43dip"
+                android:layout_marginTop="6dip"
+                android:layout_centerVertical="true"
+                android:layout_marginBottom="34dip"
+                android:button="@drawable/user_chk"
+                android:checked="true"
+                />
+
+            <TextView
+                android:id="@+id/user_proctol"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="9dip"
+                android:layout_toRightOf="@id/isreadprotocol"
+                android:text="我已阅读并同意《用户注册协议》"
+                android:textSize="12sp"
+                android:textColor="@color/gray"/>
+
+        </RelativeLayout>
+
+
+        <Button
+            android:id="@+id/requestsms"
+            android:layout_width="match_parent"
+            android:layout_height="32dip"
+            android:layout_marginLeft="46dip"
+            android:layout_marginRight="46dip"
+            android:background="@color/pink_divide"
+            android:text="发 送 验 证 码"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            />
+
+        <EditText
+            android:id="@+id/smscode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="6dip"
+            android:paddingBottom="6dip"
+            android:layout_marginLeft="46dip"
+            android:layout_marginRight="46dip"
+            android:layout_marginTop="12dip"
+            android:inputType="number"
+            android:maxLength="6"
+            android:background="@drawable/gray_rec"
+            android:paddingLeft="10dip"
+            android:cursorVisible="true"
+            android:textSize="14sp"
+            android:textColor="@color/black"
+            android:hint="输入验证码"/>
+
+        <Button
+            android:id="@+id/regist_next"
+            android:layout_width="match_parent"
+            android:layout_height="32dip"
+            android:layout_marginLeft="46dip"
+            android:layout_marginRight="46dip"
+            android:layout_marginTop="24dip"
+            android:background="@drawable/pink_rec"
+            android:layout_marginBottom="40dip"
+            android:textColor="@color/gray"
+            android:textSize="14sp"
+            android:text="下一步"/>
+    </LinearLayout>
+</ScrollView>

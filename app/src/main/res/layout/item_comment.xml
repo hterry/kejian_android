@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusableInTouchMode="false"
+    android:focusable="false"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dip"
+        android:layout_marginTop="1dip"
+        android:background="#898989"
+        ></LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:paddingTop="10dip"
+        android:paddingBottom="10dip"
+        android:paddingLeft="12dip"
+        android:paddingRight="20dip"
+        android:focusableInTouchMode="false"
+        android:focusable="false">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="40dip"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="12dip"
+                >
+                <com.weiguan.kejian.view.CircleImageView
+                    android:id="@+id/cavator"
+                    android:layout_width="40dip"
+                    android:layout_height="40dip"
+                    android:src="@drawable/default_user_pic"
+                    />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="6dip"
+                android:orientation="vertical"
+                >
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/cuserid"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:textSize="14sp"
+                        android:text="USERID"/>
+
+                    <TextView
+                        android:id="@+id/ctime"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="3dip"
+                        android:layout_below="@id/cuserid"
+                        android:textSize="12sp"
+                        android:textColor="@color/gray2"
+                        android:text="User 在 2016-01-01 评论了你"
+                        />
+
+                    <ImageView
+                        android:id="@+id/ccomment"
+                        android:layout_width="22dip"
+                        android:layout_height="22dip"
+                        android:layout_alignParentRight="true"
+                        android:src="@drawable/comment_reply"/>
+
+                </RelativeLayout>
+                <TextView
+                    android:id="@+id/ccontent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dip"
+                    android:textColor="@color/grey"
+                    android:textSize="14sp"
+                    android:text="留言内容，巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dip"
+            android:layout_marginTop="10dip"
+            android:layout_marginBottom="12dip"
+            android:background="#898989"></LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <TextView
+                android:id="@+id/mycontent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/grey"
+                android:textSize="14sp"
+                android:text="USERID:我的评论我的评论我的评论我的评论我的评论我的评论我的评论我的评论"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dip"
+        android:layout_marginBottom="1dip"
+        android:background="#898989"
+        ></LinearLayout>
+
+</LinearLayout>

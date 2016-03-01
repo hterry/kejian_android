@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="#E6E6E6"
+    android:focusableInTouchMode="false"
+    android:focusable="false"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/titlebar2"></include>
+
+    <com.weiguan.kejian.view.view.XListView
+        android:id="@+id/usercommontlist"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></com.weiguan.kejian.view.view.XListView>
+
+</LinearLayout>

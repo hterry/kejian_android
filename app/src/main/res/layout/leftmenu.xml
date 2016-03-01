@@ -2,6 +2,8 @@
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    android:focusable="false"
+    android:focusableInTouchMode="false"
     android:scrollbarSize="0dip"
     >
     <LinearLayout
@@ -10,36 +12,86 @@
         android:orientation="vertical"
         android:paddingLeft="14dip"
         android:paddingRight="14dip"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
         android:background="#FFFFFF">
 
-        <LinearLayout
-            android:id="@+id/logoutlayout"
+        <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="20dip"
-            android:layout_marginBottom="20dip"
-            android:gravity="center"
-            android:orientation="vertical"
             >
+            <LinearLayout
+                android:id="@+id/logoutlayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dip"
+                android:paddingBottom="40dip"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:visibility="visible"
+                >
 
-            <ImageView
-                android:layout_width="125dip"
-                android:layout_height="70dip"
-                android:src="@drawable/login_head"/>
+                <ImageView
+                    android:layout_width="125dip"
+                    android:layout_height="70dip"
+                    android:src="@drawable/login_head"/>
 
-            <Button
-                android:id="@+id/left_btn_login"
-                android:layout_width="wrap_content"
-                android:layout_height="40dip"
-                android:background="@drawable/btn_green_bg"
-                android:text="登陆"
-                android:textColor="@color/green"
+                <Button
+                    android:id="@+id/left_btn_login"
+                    android:layout_width="125dip"
+                    android:layout_height="34dip"
+                    android:background="@drawable/btn_green_bg"
+                    android:layout_marginTop="20dip"
+                    android:text="登 录"
+                    android:textColor="@color/green"
+                    android:visibility="visible"
+                    android:textSize="16sp"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/loginlayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
                 android:visibility="gone"
-                android:textSize="22sp"
-                />
+                >
 
+                <com.weiguan.kejian.view.CircleImageView
+                    android:id="@+id/user_pic"
+                    android:layout_width="140dip"
+                    android:layout_height="140dip"
+                    android:layout_marginTop="40dip"
+                    android:src="@drawable/default_user_pic"
+                    />
 
-        </LinearLayout>
+                <TextView
+                    android:id="@+id/user_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dip"
+                    android:gravity="center"
+                    android:text="用户名"
+                    android:textColor="@color/gray"
+                    android:textSize="14sp"
+                    />
+                <TextView
+                    android:id="@+id/user_level"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="14dip"
+                    android:layout_marginBottom="18dip"
+                    android:gravity="center"
+                    android:text="等级：一年级"
+                    android:textColor="@color/gray"
+                    android:textSize="14sp"
+                    />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="2dip"
@@ -51,7 +103,7 @@
             android:layout_height="wrap_content"
             android:divider="@null"
             android:dividerHeight="0dip"
-            android:layout_marginTop="20dip"></ListView>
+            android:layout_marginTop="36dip"></ListView>
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -61,49 +113,60 @@
         <LinearLayout
             android:orientation="vertical"
             android:layout_width="match_parent"
+            android:layout_marginTop="14dip"
             android:layout_height="wrap_content"
-            android:visibility="gone">
+            android:paddingLeft="4dip"
+            android:visibility="visible">
 
             <LinearLayout
                 android:id="@+id/comment"
-                android:gravity="center_vertical"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                android:layout_height="26dip"
+                android:gravity="center_vertical"
+                android:layout_marginBottom="24dip">
                 <ImageView
-                    android:layout_width="24dip"
-                    android:layout_height="23dip"
+                    android:layout_width="16dip"
+                    android:layout_height="16dip"
+                    android:layout_marginRight="18dip"
                     android:src="@drawable/comment"/>
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:textColor="@color/gray"
                     android:text="评论留言"/>
 
             </LinearLayout>
             <LinearLayout
                 android:id="@+id/collect_article"
-                android:gravity="center_vertical"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                android:layout_height="26dip"
+                android:gravity="center_vertical"
+                android:layout_marginBottom="24dip">
                 <ImageView
-                    android:layout_width="24dip"
-                    android:layout_height="23dip"
+                    android:layout_width="16dip"
+                    android:layout_height="16dip"
+                    android:layout_marginRight="18dip"
                     android:src="@drawable/collect"/>
 
                 <TextView
+                    android:id="@+id/collect_tv"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:textColor="@color/gray"
                     android:text="收藏文章"/>
 
             </LinearLayout>
 
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="2dip"
+                android:background="@color/green"
+                android:visibility="visible"></LinearLayout>
         </LinearLayout>
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="2dip"
-            android:background="@color/green"
-            android:visibility="gone"></LinearLayout>
 
         <Button
             android:id="@+id/about"

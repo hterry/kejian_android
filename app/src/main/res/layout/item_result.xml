@@ -7,28 +7,35 @@
     android:descendantFocusability="blocksDescendants"
     >
 
-    <TextView
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="3px"
+        android:background="@color/bggray"
+        ></LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/grey"
+        android:layout_marginBottom="16dip"
+        ></LinearLayout>
+
+    <com.weiguan.kejian.view.CFTextView
         android:id="@+id/result_title"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="2dip"
+        android:layout_marginLeft="4dip"
         android:layout_marginRight="4dip"
-        android:paddingLeft="8dip"
-        android:paddingRight="4dip"
-        android:text="文章标题"
-        android:lines="2"
-        android:background="@color/black"
-        android:ellipsize="end"
-        android:textColor="@color/white"
-        android:textSize="14sp"
         />
 
     <TextView
         android:id="@+id/result_content"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="2dip"
-        android:layout_marginRight="2dip"
+        android:layout_marginLeft="4dip"
+        android:layout_marginRight="4dip"
+        android:layout_marginTop="6dip"
+        android:layout_marginBottom="6dip"
         android:paddingLeft="4dip"
         android:paddingRight="4dip"
         android:text="文章内容"
@@ -40,7 +47,9 @@
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dip"
+        >
 
         <TextView
             android:id="@+id/publish_time"
@@ -65,7 +74,7 @@
             android:layout_toLeftOf="@id/publish_time"
             />
 
-        <com.example.luo.view.CircleImageView
+        <ImageView
             android:id="@+id/iscollect"
             android:layout_width="20dip"
             android:layout_height="20dip"
@@ -74,5 +83,9 @@
             />
 
     </RelativeLayout>
-
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/grey"
+        ></LinearLayout>
 </LinearLayout>
